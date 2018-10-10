@@ -5,10 +5,10 @@ import os
 
 
 def modify():
-    file = open('zero.md', 'r')
+    file = open('C:/Users/qunqun/Documents/GitHub/HeartRateDetection-master/zero.md', 'r')
     flag = int(file.readline()) == 0
     file.close()
-    file = open('zero.md', 'w+')
+    file = open('C:/Users/qunqun/Documents/GitHub/HeartRateDetection-master/zero.md', 'w+')
     if flag:
         file.write('1')
     else:
@@ -17,7 +17,7 @@ def modify():
 
 
 def commit():
-    os.system('git commit -a -m test_github_streak > /dev/null 2>&1')
+    os.system('git commit -a -m change the green point')
 
 
 def set_sys_time(year, month, day):
@@ -37,4 +37,4 @@ def daily_commit(start_date, end_date):
 
 
 if __name__ == '__main__':
-    daily_commit(datetime.date(2018, 2, 31), datetime.date(2018, 4, 28))
+    daily_commit(datetime.date(2016,2,10), datetime.date(2016,11,5))
